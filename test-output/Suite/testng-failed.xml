@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="methods">
+  <parameter name="browser" value="firefox"/>
+  <test name="ChromeTest(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcase.TC_01">
+        <methods>
+          <include name="exit"/>
+          <include name="exit"/>
+          <include name="tc1" invocation-numbers="1"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcase.TC_01 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testcase.TC_01">
+        <methods>
+          <include name="exit"/>
+          <include name="exit"/>
+          <include name="tc1" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcase.TC_01 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
